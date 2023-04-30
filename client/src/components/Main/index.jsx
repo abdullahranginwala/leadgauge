@@ -1,3 +1,4 @@
+import LeadTable from "../LeadCRM/LeadCRM";
 import styles from "./styles.module.css";
 
 const Main = () => {
@@ -9,11 +10,12 @@ const Main = () => {
 	return (
 		<div className={styles.main_container}>
 			<nav className={styles.navbar}>
-				<h1>fakebook</h1>
+				<h1>ProspectDetect</h1>
 				<button className={styles.white_btn} onClick={handleLogout}>
 					Logout
 				</button>
 			</nav>
+			<LeadTable />
 		</div>
 	);
 };
